@@ -99,22 +99,82 @@
 // 2
 // 2 4
 // 2 4 6
-name =""
-for (let r = 2; r <= 6; r=r+2) {
-    for (let c = 2; c <= r; c=c+2) {
-        name=name+c+" "
+name = ""
+for (let n = 2; n <= 6; n = n + 2) {
+    for (let m = 2; m <= n; m = m + 2) {
+        name = name + m + " "
     }
-    name=name+"\n"    
+    name = name + "\n"
 }
-console.log(name);        
+console.log(name);
+
+
 // 1
 // 1 2
 // 1 2 3
-name =""
-for (let r = 1; r <= 3; r++) {
-    for (let c = 1; c <= r; c++) {
-        name=name+c+" "
+name = ""
+for (let e = 1; e <= 3; e++) {
+    for (let t = 1; t <= e; t++) {
+        name = name + t + " "
     }
-    name=name+"\n"    
+    name = name + "\n"
+
 }
-console.log(name);        
+console.log(name);
+
+// 1 2 1 2 1 2
+// 1 2 1 2 1
+// 1 2 1 2
+// 1 2 1
+// 1 2
+// 1
+
+test = ""
+boo = true
+for (let row = 6; row >= 1; row--) {
+    for (let col = row; col >= 1; col--) {
+        // if (boo == true) {
+        //     test += 1
+        // }else{
+        //     test += 2
+        // }
+        // test += " "
+        // boo = !boo
+        test += boo ? 1 : 2
+        test += " "
+        boo = !boo
+    }
+    test += "\n"
+}
+console.log(test);
+
+// A
+// A B
+// A B C
+// A B C D
+
+for (let row = 1; row <= 4; row++) {
+    char = "A"
+    assci = char.charCodeAt(0)
+    for (let col = 1; col <= row; col++) {
+        test += String.fromCharCode(assci) + " "
+        assci++
+    }
+    test += "\n"
+}
+console.log(test);
+
+//    *
+//  * * *
+//* * * * *
+height = 20
+for (let row = 1; row <= height; row += 2) {
+    for (let b = row; b <= height - 1; b++) {
+        test += " "            
+    }
+    for (let col = 1; col <= row; col++) {
+        test += "*" + " "
+    }
+    test += "\n"
+}
+console.log(test);
