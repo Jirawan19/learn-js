@@ -74,13 +74,47 @@
 // }
 // console.log(b);
 
-b = ""
-for (let r = 1; r <= 5; r++) {
-    for (let c = 1; c <=r; c++) { 
-        b += 1
-    }    
-    b += r + "\n"
-}
-console.log(b);
-// ctrl + ~
+// b = ""
+// for (let r = 1; r <= 5; r++) {
+//     for (let c = 1; c <= r; c++) {
+//         b += 1
+//     }
+//     b += r + "\n"
+// }
+// console.log(b);
+// // ctrl + ~
 // วิธีรันไฟล์ nodemon ตามด้วยชื่อไฟล์
+
+// output = ""
+// base = 3
+// max = 20
+// for (let row = 7; row <= 28; row += 7) {
+//     for (let col = 7; col <= row; col += 7) {
+//         output += 1 + " "
+//     }
+//     output += row + "\n"
+// }
+// console.log(output);
+
+// 2
+// 2 4
+// 2 4 6
+name =""
+for (let r = 2; r <= 6; r=r+2) {
+    for (let c = 2; c <= r; c=c+2) {
+        name=name+c+" "
+    }
+    name=name+"\n"    
+}
+console.log(name);        
+// 1
+// 1 2
+// 1 2 3
+name =""
+for (let r = 1; r <= 3; r++) {
+    for (let c = 1; c <= r; c++) {
+        name=name+c+" "
+    }
+    name=name+"\n"    
+}
+console.log(name);        
