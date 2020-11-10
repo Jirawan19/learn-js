@@ -96,85 +96,125 @@
 // }
 // console.log(output);
 
-// 2
-// 2 4
-// 2 4 6
-name = ""
-for (let n = 2; n <= 6; n = n + 2) {
-    for (let m = 2; m <= n; m = m + 2) {
-        name = name + m + " "
-    }
-    name = name + "\n"
-}
-console.log(name);
+// // 2
+// // 2 4
+// // 2 4 6
+// name = ""
+// for (let n = 2; n <= 6; n = n + 2) {
+//     for (let m = 2; m <= n; m = m + 2) {
+//         name = name + m + " "
+//     }
+//     name = name + "\n"
+// }
+// console.log(name);
 
 
-// 1
-// 1 2
-// 1 2 3
-name = ""
-for (let e = 1; e <= 3; e++) {
-    for (let t = 1; t <= e; t++) {
-        name = name + t + " "
-    }
-    name = name + "\n"
+// // 1
+// // 1 2
+// // 1 2 3
+// name = ""
+// for (let e = 1; e <= 3; e++) {
+//     for (let t = 1; t <= e; t++) {
+//         name = name + t + " "
+//     }
+//     name = name + "\n"
 
-}
-console.log(name);
+// }
+// console.log(name);
 
-// 1 2 1 2 1 2
-// 1 2 1 2 1
-// 1 2 1 2
-// 1 2 1
-// 1 2
-// 1
+// // 1 2 1 2 1 2
+// // 1 2 1 2 1
+// // 1 2 1 2
+// // 1 2 1
+// // 1 2
+// // 1
 
-test = ""
-boo = true
-for (let row = 6; row >= 1; row--) {
-    for (let col = row; col >= 1; col--) {
-        // if (boo == true) {
-        //     test += 1
-        // }else{
-        //     test += 2
-        // }
-        // test += " "
-        // boo = !boo
-        test += boo ? 1 : 2
-        test += " "
+// test = ""
+// boo = true
+// for (let row = 6; row >= 1; row--) {
+//     for (let col = row; col >= 1; col--) {
+//         // if (boo == true) {
+//         //     test += 1
+//         // }else{
+//         //     test += 2
+//         // }
+//         // test += " "
+//         // boo = !boo
+//         test += boo ? 1 : 2
+//         test += " "
+//         boo = !boo
+//     }
+//     test += "\n"
+// }
+// console.log(test);
+
+// // A
+// // A B
+// // A B C
+// // A B C D
+
+// for (let row = 1; row <= 4; row++) {
+//     char = "A"
+//     assci = char.charCodeAt(0)
+//     for (let col = 1; col <= row; col++) {
+//         test += String.fromCharCode(assci) + " "
+//         assci++
+//     }
+//     test += "\n"
+// }
+// console.log(test);
+
+// //    *
+// //  * * *
+// //* * * * *
+// height = 20
+// for (let row = 1; row <= height; row += 2) {
+//     for (let b = row; b <= height - 1; b++) {
+//         test += " "            
+//     }
+//     for (let col = 1; col <= row; col++) {
+//         test += "*" + " "
+//     }
+//     test += "\n"
+// }
+// console.log(test);
+// number = ""
+// for (let r = 2; r <= 5; r++) {
+//     for (let m = 1; m <= 12; m++) {
+//         if (m % 2 != 0) {
+//             number = number + m + "*" + r + "=" + r * m + "\t"
+//         }
+
+//     }
+//     number = number + "\n"
+// }
+// console.log(number);
+
+// π=3.14159
+// r=6*6
+// console.log(r);
+// console.log(π*r);
+
+// 2*1=2 3*1=1 4*1=4
+// 2*2=4 3*2=6 4*2=8
+
+// 3*1=1    2*1=2   5*1=1   4*1=4
+// 3*2=6    2*2=4   5*2=10  4*2=8
+
+number = ""
+tmp = ""
+boo=true
+for (let row = 1; row <= 2; row++) {
+    for (let col = 2; col <= 5; col++) {
+        if (boo) {
+            tmp += col + "*" + row + "=" + col * row + "\t"
+        }else{
+            number+= col + "*" + row + "=" + col * row + "\t" + tmp
+            tmp = ""
+        }
         boo = !boo
-    }
-    test += "\n"
+    }    
+    number+="\n"
 }
-console.log(test);
+console.log(number);
 
-// A
-// A B
-// A B C
-// A B C D
-
-for (let row = 1; row <= 4; row++) {
-    char = "A"
-    assci = char.charCodeAt(0)
-    for (let col = 1; col <= row; col++) {
-        test += String.fromCharCode(assci) + " "
-        assci++
-    }
-    test += "\n"
-}
-console.log(test);
-
-//    *
-//  * * *
-//* * * * *
-height = 20
-for (let row = 1; row <= height; row += 2) {
-    for (let b = row; b <= height - 1; b++) {
-        test += " "            
-    }
-    for (let col = 1; col <= row; col++) {
-        test += "*" + " "
-    }
-    test += "\n"
-}
-console.log(test);
