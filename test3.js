@@ -201,20 +201,95 @@
 // 3*1=1    2*1=2   5*1=1   4*1=4
 // 3*2=6    2*2=4   5*2=10  4*2=8
 
-number = ""
-tmp = ""
-boo=true
-for (let row = 1; row <= 2; row++) {
-    for (let col = 2; col <= 5; col++) {
-        if (boo) {
-            tmp += col + "*" + row + "=" + col * row + "\t"
-        }else{
-            number+= col + "*" + row + "=" + col * row + "\t" + tmp
-            tmp = ""
-        }
-        boo = !boo
-    }    
-    number+="\n"
-}
-console.log(number);
+// number = ""
+// tmp = ""
+// boo=true
+// for (let row = 1; row <= 2; row++) {
+//     for (let col = 2; col <= 5; col++) {
+//         if (boo) {
+//             tmp += col + "*" + row + "=" + col * row + "\t"
+//         }else{
+//             number+= col + "*" + row + "=" + col * row + "\t" + tmp
+//             tmp = ""
+//         }
+//         boo = !boo
+//     }    
+//     number+="\n"
+// }
+// console.log(number);
 
+
+// 2*1=2 3*1=3 4*1=4 
+// 2*2=2 3*2=6 4*2=8  
+// 2*3=6 3*3=9 4*3=12
+// number=""
+// for (let row = 1; row <= 3; row++) {
+//     for (let col = 2; col <= 4; col++) {
+//     number += col + "*"+ row + "=" + row*col +" "        
+//     }
+//     number=number+"\n"
+// }
+// console.log(number);
+
+// 1-10
+// num=""
+// for (let index = 1; index <= 10; index++) {
+//     num=num+index+" "    
+// }
+// console.log(num);
+
+// // 2 4 6 8 10
+// num=""
+// for (let index = 1; index <= 10; index++) {
+//     if (index %2==0) {
+//         num=num+index+" "
+//     }    
+// }
+// console.log(num);
+
+// num = ""
+// boo = false
+// for (let index = 1; index <= 10; index++) {
+//     if (!boo) {
+//         num += index + " "       
+//     }
+//     boo = !boo
+// }
+// console.log(num);
+
+// 10-1
+// num = ""
+// for (let index = 10; index >= 1; index--) {
+//     num = num + index+" "
+// }
+// console.log(num);
+
+// 1
+// 12
+// 123
+// num=""
+// for (let row = 1; row <= 3; row++) {
+//     for (let col = 1; col <= row; col++) {
+//     num=num+col        
+//     }    
+//     num=num+"\n"
+// }
+// console.log(num);
+
+// 1
+// 21
+// 212
+// 1212
+// num = ""
+// boo = true
+// for (let row = 1; row <= 4; row++) {
+//     for (let col = 1; col <= row; col++) {
+//         if (boo) {
+//             num = num + "1"
+//         }
+//         else { num = num + "2" }
+//         boo = !boo
+//     }
+//     num=num+"\n"
+// }
+// console.log(num);
