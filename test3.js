@@ -298,3 +298,35 @@
 // 212
 // 21
 // 1
+// num = ""
+// boo = false
+// for (let row = 4; row >= 1; row--) {
+//     for (let col = 1; col <= row; col++) {
+//         if (boo) {
+//             num = num + "1"
+//         }
+//         else { num = num + "2" }
+//         boo = !boo
+//     }
+//     num = num + "\n"
+// }    
+// console.log(num);
+
+// **
+// ***
+// **
+// ***
+// **
+num = ""
+boo = false
+for (let row = 2; row <= 3; row++) {
+    for (let col = 2; col <= row; col++) {
+        if (boo) {
+            num = num + "*"
+        }
+        else {num = num + "**"}
+        boo = !boo
+    }    
+    num = num + "\n"
+}
+console.log(num);
