@@ -317,16 +317,26 @@
 // **
 // ***
 // **
+// num = ""
+// boo = true
+// for (let row = 1; row <= 5; row++) {
+//     if (boo) {
+//         num = num + "**"
+//     }    
+//     else {num = num + "***"}
+//     boo = !boo
+//     num = num + "\n"
+// }
+// console.log(num);
+
+// 11
+// 212
+// 3123
 num = ""
-boo = false
-for (let row = 2; row <= 3; row++) {
-    for (let col = 2; col <= row; col++) {
-        if (boo) {
-            num = num + "*"
-        }
-        else {num = num + "**"}
-        boo = !boo
-    }    
-    num = num + "\n"
+for (let row = 1; row <= 3; row++) {
+    for (let col = 1; col <= row; col++) {
+        num = num + col
+    }
+    num = num +"\n"
 }
 console.log(num);
