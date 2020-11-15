@@ -332,11 +332,71 @@
 // 11
 // 212
 // 3123
-num = ""
-for (let row = 1; row <= 3; row++) {
-    for (let col = 1; col <= row; col++) {
-        num = num + col
-    }
-    num = num +"\n"
-}
-console.log(num);
+// 41234
+// num = ""
+// for (let row = 1; row <= 3; row++) {
+//     num += row
+//     for (let col = 1; col <= row; col++) {
+//         num = num + col 
+//     }
+//     num = num +"\n"
+// }
+// console.log(num);
+
+// 11
+// 1212
+// 123123
+// 12341234
+// 1234512345
+
+// num = ""
+// for (let row = 1; row <= 5; row++) {
+//     for (let col = 1; col <= row; col++) {
+//         num = num + col 
+//     }
+//     for (let col = 1; col <= row; col++) {
+//         num = num + col 
+//     }
+//     num = num +"\n"
+// }
+// console.log(num);
+
+// 11
+// 1221
+// 123321
+// 12344321
+
+// num = ""
+// for (let row = 1; row <= 4; row++) {
+//     for (let col = 1; col <= row; col++) {
+//     num = num + col        
+//     }    
+//     for (let col = row; col >= 1; col--) {
+//         num = num + col        
+//         }
+//     num = num + "\n"
+// }
+// console.log(num);
+
+// 67654321
+// 5654321
+// 654321
+// 54321
+// 6321
+// 521
+// 61
+
+// boo = true
+// num = ""
+// for (let row = 6; row >= 1; row--) {
+//     if (boo) {
+//         num = num + "5"
+//     }
+//     else { num = num + "6" }
+//     boo = !boo
+//     for (let col = row; col >= 1; col--) {
+//         num = num + col
+//     }
+//     num = num + "\n"
+// }
+// console.log(num);
